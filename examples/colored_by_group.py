@@ -72,26 +72,99 @@ class GroupedColorFunc(object):
         return self.get_color_func(word)(word, **kwargs)
 
 
-text = """The Zen of Python, by Tim Peters
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!"""
+text = """SignalP
+SIFT
+TargetP
+PolyPhen
+MutationTaster
+WoLF-PSORT
+FOLDEF
+MaxEnt
+Dmutant
+CADD
+FoldX
+PROVEAN
+PolyPhen2
+FIS
+Mutationassessor.org 
+SNAP2 
+PMUT
+AGGRESCAN
+SNPs3D 
+MutPred
+A-GVGD
+ SNPinfo/FuncPred 
+Mupro
+CHASM
+Waltz
+TANGO
+CUPSAT
+Eris
+DFIRE
+ PantherPSEC
+MAPP
+Zyggregator
+PAGE
+EGAD
+SDM
+PopMuSic
+VAAST
+PROFcon
+CanPredict
+FOLD-RATE
+GWAVA 
+SNPeffect
+Scpred
+nsSNPAnalyzer 
+FoldAmyloid
+Scide
+KGGSeq
+DBD-Hunter
+PPT-DB
+PON-P
+Skippy
+Saunders&Baker
+TransComp
+UMD-predictor
+K-Fold
+SAPred
+LS-SNP/PDB
+BeAtMuSiC
+CoVEC 
+Parepro
+FATHmm
+PASTA2
+MutPredSplice
+SNPdbe
+transFIC 
+VAAST2
+SAAPdb
+LocTree2
+VEST
+MultiMutate
+SIFT-indel
+Phen-Gen
+AutoMute
+MuStab
+ASP/ASPex
+SNPs&GO
+PhD-SNP
+DANN
+FunSAV
+MuX-48
+MuX-S
+HOPE
+SInBaD
+Eigen
+EIGEN
+Re-ID
+NETdiseaseSNP
+ProA
+VEST-indel
+Exomiser
+CoDP
+VarMod
+SuRFR"""
 
 # Since the text is small collocations are turned off and text is lower-cased
 wc = WordCloud(collocations=False).generate(text.lower())
